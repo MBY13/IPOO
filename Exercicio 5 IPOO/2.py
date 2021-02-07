@@ -3,16 +3,15 @@
 #Exemplo de valores esperados: múltiplo(8,4) = True
 
 def multiplo(x,y):
-    if (x % y) == int:
-        True
+    if x % y == 0:
+        return True
     else:
-        False
-
+        return False
 #############################
-x = int(input("Digite um numero inteiro:"))
-y = int(input("Digite um numero inteiro:"))
+a = int(input("Digite um numero inteiro:"))
+b = int(input("Digite um numero inteiro:"))
 
-if (multiplo(x,y)) == True :
+if (multiplo(a,b)) :
     print (f"Os numeros digitados são multiplo")
 else:
     print("Os numeros digitados não são multiplos")
